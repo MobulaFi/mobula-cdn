@@ -2,3 +2,4 @@ content/*
 !content/.gitkeep 
 dist/*
 !dist/.gitkeep 
+node_modules/*
