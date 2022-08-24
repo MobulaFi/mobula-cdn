@@ -26,7 +26,7 @@ app.get("/*", (req, res) => {
 app.post("/generate", (req, res) => {
   console.log(req.body);
   if (req.body.type && req.body.id && req.body.auth === config.AUTH) {
-    const randomImageId = Math.floor(Math.random() * 10);
+    const randomImageId = Math.floor(Math.random() * 20);
     fs.copyFileSync(
       path.resolve(
         __dirname,
