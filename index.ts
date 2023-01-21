@@ -1,10 +1,13 @@
+import bodyParser from "body-parser";
+import cors from "cors";
 import express from "express";
 import fs from "fs";
 import path from "path";
-import bodyParser from "body-parser";
-const app = express();
 import config from "./config";
-import { findExtension, extensions } from "./utils";
+import { findExtension } from "./utils";
+
+const app = express();
+app.use(cors());
 
 app.use(bodyParser.json());
 

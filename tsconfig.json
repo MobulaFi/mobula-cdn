@@ -9,7 +9,6 @@
     "noImplicitAny": true,
     "moduleResolution": "node",
     "sourceMap": true,
-    "outDir": "./dist",
     "baseUrl": ".",
     "paths": {
       "@core/*": ["./core/*"],
@@ -19,6 +18,5 @@
       "@utils/*": ["./utils/*"]
     }
   },
-  "compileOnSave": true,
-  "include": ["src/**/*"]
+  "compileOnSave": true
 }
